@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'Idée</title>
+    <style>
+        body {
+            color: white;
+            background-color: transparent; /* Rend le fond transparent */
+        }
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Soumettre une idée</h2>
+    <form id="monFormulaire" action="https://hook.eu2.make.com/avvywjltgngd2ail8nuxywffyp5eg9il" method="post">
+        <label for="idee">Votre Idée:</label><br>
+        <input type="text" id="idee" name="idee" required><br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <script>
+        document.getElementById('monFormulaire').onsubmit = function() {
+            fetch('https://hook.eu2.make.com/avvywjltgngd2ail8nuxywffyp5eg9il', {
+                method: 'POST',
+                body: new FormData(document.getElementById('monFormulaire')),
+            }).then(response => {
+                console.log('Formulaire envoyé');
+                document.getElementById('monFormulaire').reset();
+            });
+            return false;
+        };
+    </script>
+</body>
+</html>
