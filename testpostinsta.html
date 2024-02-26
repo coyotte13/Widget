@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulation de Post Instagram</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .instagram-post {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .instagram-post img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .header, .footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .username {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .caption {
+    padding: 10px;
+  }
+
+  .icon {
+    margin: 0 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="instagram-post">
+  <div class="header">
+    <img src="profile-pic.jpg" alt="Profil" style="width: 30px; border-radius: 50%;">
+    <span class="username">nom_utilisateur</span>
+  </div>
+  <img src="post-image.jpg" alt="Post">
+  <div class="footer">
+    <span class="icon">♥</span>
+    <span class="icon">💬</span>
+    <span class="icon">➦</span>
+  </div>
+  <div class="caption">
+    Ceci est une légende pour votre post Instagram. #hashtag
+  </div>
+</div>
+
+</body>
+</html>
